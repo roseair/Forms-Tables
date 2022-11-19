@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Tables & Forms</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  
+<header>
+<h1> Tables and Forms </h1>
+</header>
+
+<section>
+<h2> Tables </h2>
+<table class="classTable">
+<caption>Top 3 Favorite Things</caption>
+  
+   <tr>
+   <th>Foods</th>
+   <th>Activities</th>
+   <th>Musicians</th>
+   </tr>
+     
+  <tr>
+    <td>Sushi</td>
+    <td>Singing</td>
+    <td>Alec Benjamin</td>
+  </tr>
+
+  <tr>
+    <td> Pizza </td>
+    <td> Gaming</td>
+    <td> BTS </td>
+  </tr>
+
+<tr>
+     <td colspan="3">
+      Break Row - Span 3 Columns
+        </td>
+        
+      </tr>
+      <tr>
+        <td rowspan="2">
+          Across 2 Rows
+        </td>
+        <td>
+          Ex:2
+        </td>
+        <td>
+          Ex:3
+        </td>
+      </tr>
+      <tr>
+        <td>Ex:2</td>
+        <td>Ex:3</td>
+      </tr>
+  
+      <tr>
+        <td>Ex:1</td>
+        <td></td>
+        <td></td>
+      </tr>
+  
+</table>
+  
+</section>
+
+<section>
+<h2> Forms </h2>
+<fieldset>
+<form action="https://formspree.io/f/mjvzzgag" method="post">
+<label for="name"> Name </label>
+<input required id="name" name="Name" type="text" placeholder="Ex: Anson Lian"> 
+  
+<br>
+  
+<label for="age"> Age </label>
+<input required id="age" name="Age" type="text" placeholder="Enter your Age"> 
+
+<br>
+
+<label for="date"> Date </label>
+<input type="month" id="date" name="Date">
+
+<br>
+  
+<label for="email"> Email </label>
+<input type="email" id="email" name="Email"> 
+
+<br>
+
+<label for="password"> Create a Password</label>
+<input type="password" name="Password" id="password">
+
+</fieldset>
+<br>
+<fieldset>
+<label for="slider"> How are you feeling today? (/10) </label>
+<input type="range" min="1" max="10" id="slider" name="How they are feeling (/10)" value="5">
+
+<br>
+
+<p> Pick your favorite meal! </p>
+<label for="breakfast">Breakfast </label>
+<input type="radio" id="breakfast" name="Favorite Meal" value="Breakfast"> 
+<br>
+<label for="lunch">Lunch </label>
+<input type="radio" id="lunch" name="Favorite Meal" value="Lunch"> 
+<br>
+<label for="dinner">Dinner </label>
+<input type="radio" id="dinner" name="Favorite Meal" value="Dinner"> 
+  
+<br>
+<br>
+<label for="superpower"> What is your favorite superpower? </label>
+<select id="superpower" name="Favorite Superpower">
+<option value="N/A">--Select a Choice--</option>
+<option value="Flying">Flying</option>
+<option value="Invisibility">Invisibility</option>
+<option value="Mind-Reading">Mind-Reading</option>
+<option value="Superstrength">Superstrength</option>
+<option value="Mind-Control">Mind-Control</option>
+<option value="Telekinesis">Telekinesis</option>
+<option value="Healing">Healing</option>
+</select>
+  
+<br>
+<br>
+  
+<label for="rating"> Rate your experience (/10): </label>
+<input type="number" min="1" max="10" id="rating" name="Experience Rating" value="10">
+
+<br>
+  
+<label> Anything you want to say?:
+    <textarea name="Message"></textarea>
+  </label>
+
+</fieldset>
+<br>
+  
+<label for="completion"> Completion: </label>
+<meter id="Completion" name="Completion" value="100" min="1" max="100"> </meter>
+
+<br>
+
+<input type="submit" value="Submit">
+
+<figure>
+<img src="https://media.istockphoto.com/id/455383099/vector/cartoon-worker-and-stop-sign.jpg?s=612x612&w=0&k=20&c=Go_ko063AMVAZV4e7y1aa7q6_rHR4FYm42V0VEM7SRY=" width="100px">
+<figcaption> Stop here! You have reached the end of this form. Please submit your answer now!</figcaption>
+</figure>
+</form>
+</section>
+
+</body>
+
+</html>
